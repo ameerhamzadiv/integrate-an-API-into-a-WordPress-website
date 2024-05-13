@@ -143,13 +143,8 @@ add_shortcode('api_data_custom', 'display_api_data');
 <br><br>
 Step 6: In your Elementor HTML widget, use the shortcode [api_data_custom] to display the data:
 <br><br>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code> if (!is_wp_error($response) &amp;&amp; $response['response']['code'] == 200) {
-    $data = json_decode($response['body']);
-    
-    return $data;
-} else {
-    return false;
-}
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code> 
+	[api_data_custom]
 </code></pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" [api_data_custom] " tabindex="0" role="button">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
