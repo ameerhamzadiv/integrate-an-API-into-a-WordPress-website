@@ -15,6 +15,7 @@ Step 4: Make API Calls in WordPress
 <br><br>
 Open custom-api-integration.php and add the following code:
 <br><br>
+<code>
 <?php
 /*
 Plugin Name: Custom API Integration
@@ -33,6 +34,7 @@ function fetch_api_data() {
         return false;
     }
 }
+</code>
 <br><br>
 Step 5: Create a shortcode in your plugin file (custom-api-integration.php):
 <br><br>
