@@ -1,20 +1,20 @@
 # integrate-an-API-into-a-WordPress-website
 <br>
 To integrate an API into a WordPress website built with Elementor, you can follow these general steps:
-<br>
+<br><br>
 Step 1: Understand Your API
 Let's assume your Laravel API has an endpoint /api/data which returns JSON data containing information you want to display on your WordPress site.
-<br>
+<br><br>
 Step 2: Create a Custom WordPress Plugin
 Create a new directory in your WordPress installation's wp-content/plugins/ directory. Let's call it custom-api-integration.
 Inside this directory, create a PHP file named custom-api-integration.php. This will be the main file of your custom plugin.
-<br>
+<br><br>
 Step 3: Plugin Activation: After Create Directory and php file Activate plugin from plugins page in wordpress go to pligin page you see custom plugin name.
-<br>
+<br><br>
 Step 4: Make API Calls in WordPress
-<br>
+<br><br>
 Open custom-api-integration.php and add the following code:
-<br>
+<br><br>
 <?php
 /*
 Plugin Name: Custom API Integration
@@ -33,10 +33,9 @@ function fetch_api_data() {
         return false;
     }
 }
-
+<br><br>
 Step 5: Create a shortcode in your plugin file (custom-api-integration.php):
-
-
+<br><br>
 // Function to fetch API data and return HTML
 function display_api_data() {
     $data = fetch_api_data();
@@ -141,8 +140,8 @@ height:150px !important;
 
 // Register shortcode
 add_shortcode('api_data_custom', 'display_api_data');
-<br>
+<br><br>
 Step 6: In your Elementor HTML widget, use the shortcode [api_data_custom] to display the data:
-<br>
+<br><br>
 [api_data_custom]
 
