@@ -1,6 +1,11 @@
 <?php
 /*
 Plugin Name: Custom API Integration
+Plugin URI: https://www.example.com
+Description: Get data from another website
+Author: Author Name
+Author URI: https://www.example.com
+Version: 1.0
 */
 
 // Function to retrieve data from the API
